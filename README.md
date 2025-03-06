@@ -20,6 +20,7 @@ Implementation using Python code
 Testing the server and client 
 
 ## PROGRAM:
+```
 Client:
 import socket
 HOST, PORT = '127.0.0.1', 65432
@@ -36,6 +37,7 @@ with socket.create_server((HOST, PORT)) as s:
         print(f'Connected by {addr}')
         while data := conn.recv(1024):
             conn.sendall(data)
+```
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/b40f3f07-bfce-4bd8-b29a-2faa4cdadc7b)
 
